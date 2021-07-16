@@ -1,0 +1,15 @@
+<form>
+    <label id="label1">
+      Name: <input [(ngModel)]="data.name" name="name" type="text">
+    </label>
+    
+    <br><br>
+    <label id="label2">
+     Job: <input  [(ngModel)]="data.job" name="job" type="text">
+    </label>
+    <br><br>
+  </form>
+  <mat-dialog-actions>
+    <button (click)="updateUser()" color="primary" mat-button>Update</button>
+    <button (click)="dialogRef.close(data)" color="primary" mat-button>Cancel</button>
+  </mat-dialog-actions>
